@@ -62,6 +62,19 @@ class BST:
 			elif pred.right.val == value:
 				pred.right = toDelete.left if toDelete.left else toDelete.right
 
+		"""
+		If we remove the node referenced by our
+		local root variable, how do we change the
+		left or right field of its parent (if this node
+		does not have a pointer back to the
+		parent)?
+
+		Solution: Return a reference to the replacement
+		reference (or null) as the result and let the
+		previous invocation store the result in its local
+		root node (which is the parent of the root node
+		we want to remove). 
+		"""
 			
 
 				
@@ -102,11 +115,14 @@ class BST:
 			curr = curr.right
 		return curr.val
 
-	def nextLargest(self, value):
+	def getPredecessor(self, value):
 		pass 
 
-	def nextSmallest(self, value):
+	def getSuccessor(self, value):
 		pass 
+
+	def getParent(self, currnode):
+		pass
 
 	def length(self):
 		return self.size

@@ -29,7 +29,6 @@ def permuteHelper(instr, idx, res):
 """
 
 def findPerms(instr):
-	print "in FindPerms", instr
 	if instr == None:
 		return None
 
@@ -40,18 +39,22 @@ def findPerms(instr):
 		permutations.append(" ") 
 		return permutations
 
-	firstLetter = instr[0]
 	subPerms = findPerms(instr[1:])
 	for substr in subPerms:
 		for i in range(0, len(substr)):
-			newPerm = substr[:i] + firstLetter + substr[i:]
+			newPerm = substr[:i] + instr[0] + substr[i:]
 			permutations.append(newPerm)			
 
 	return permutations
 
 # Test cases: 
-print findPerms("hello")
-print findPerms("str")
+allPerms = findPerms("hello")
+print [perm.strip() for perm in allPerms]
+allPerms = findPerms("str")
+print [perm.strip() for perm in allPerms]
+
+# CTCI Official Solution: 
+"""
 def getPerms2(string):
     result = []
     getPerms2Inner(" ", string, result)
@@ -70,3 +73,4 @@ def getPerms2Inner(prefix, remainder, result):
 
 print getPerms2("hello")
 print getPerms2("str")
+"""

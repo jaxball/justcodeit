@@ -2,32 +2,6 @@
 Permutation without Dups: Write a method to compute all permutations of a string of unique characters.
 """
 
-# Failed attempt 
-"""
-def permUnique(instr):
-	permutations = []
-	permutations.append("")
-	permuteHelper(instr, 0, permutations)
-	return permutations
-
-
-def permuteHelper(instr, idx, res):
-
-	if idx > len(instr)-1: 
-		return
-
-	print "before =", res
-	for item in res:
-		newPerm = item + instr[idx]
-		print "newPerm =", newPerm, "item =", item 
-		res.append(newPerm)
-		print "res is", res		
-		# for i in range(idx, len(instr)-idx-1):
-		return permuteHelper(instr, idx+1, res)
-
-	return
-"""
-
 def findPerms(instr):
 	if instr == None:
 		return None

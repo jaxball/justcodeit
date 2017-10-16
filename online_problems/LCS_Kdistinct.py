@@ -18,6 +18,7 @@ Additional edge case:
 input: aabacbebebe
 return: bebebe 
 
+author: Jason Lin 
 """
 
 def searchLeftRight(left, right, beg, end, line, window):
@@ -73,7 +74,6 @@ def LCSdistinct(line):
 
 
 # Test cases
-
 s1 = "aabacbebebe"
 s1b = "aabacbebebea"
 s2 = "abbaacab"

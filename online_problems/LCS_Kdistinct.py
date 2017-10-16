@@ -18,7 +18,7 @@ Additional edge case:
 input: aabacbebebe
 return: bebebe 
 
-author: Jason Lin 
+original solution by: Jason Lin 
 """
 
 def searchLeftRight(left, right, beg, end, line, window):

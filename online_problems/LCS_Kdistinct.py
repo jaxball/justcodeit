@@ -46,7 +46,7 @@ def LCSdistinct(line):
     beg = "" 
     end = ""
 
-    for i, c in enumerate(line[:]):
+    for i, c in enumerate(line):
         if c == beg or c == end:
             window.append(c)
             continue
@@ -66,7 +66,6 @@ def LCSdistinct(line):
     # Handles the case when string ends with the longest desired substring
     # right = i; left = right - len(window) 
     searchLeftRight(right, right+len(window), beg, end, line, window)
-
     maxLen = max(maxLen, len(window))
     if maxLen == len(window):
         maxString = window

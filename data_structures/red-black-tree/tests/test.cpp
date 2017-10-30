@@ -1,4 +1,4 @@
-#include "rbbst.h"
+#include "../redblacktree.h"
 #include <iostream>
 #include <utility>
 #include <string>
@@ -9,8 +9,6 @@ int main () {
     // RedBlackNode<int, string>* testRBNode = new RedBlackNode<int, string>(key, val, NULL);
     
     RedBlackTree<int, string> testRBT;
-    
-    
     testRBT.insert(make_pair(7, "seven"));
     testRBT.print();
     testRBT.insert(make_pair(2, "two"));
@@ -37,6 +35,7 @@ int main () {
     for (it=testRBT.begin(); it != testRBT.end(); ++it) {
         cout << it->first << endl;
     }
+    
     try {
         ++it;
         cout << it->first << endl;

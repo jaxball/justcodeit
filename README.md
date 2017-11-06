@@ -1,29 +1,29 @@
 # justcodeit
 
-###Goals###
+##Goals##
 Saturday (10/7/17):
 
-* Recursion and Dynamic Programming - CTCI 
-* Trees and Graphs - CTCI, DFS, BFS, A*
-* Review CMU Data Structure slides
-* Review notes on *Mathematical foundations of Machine Learning*
-
+* [x] Recursion and Dynamic Programming - CTCI 
+* [x] Trees and Graphs - CTCI, DFS, BFS, A*
+* [x] Review CMU Data Structure slides
+* [ ] Review notes on *Mathematical foundations of Machine Learning
+   
 Sunday (10/8/17): 
 
-* Linked Lists - CTCI
-* Arrays and Strings - CTCI
-* Moderate - CTCI
-* Stanford's Interview problems
+* [x] Linked Lists - CTCI
+* [x] Arrays and Strings - CTCI
+* [ ] Moderate - CTCI
+* [ ] Stanford's Interview problems
 
 Monday (10/9/17):
 
-* Stacks & Queues - CTCI
-* Math - CTCI
-* Sort & Searching - CTCI
+* [x] Stacks & Queues - CTCI
+* [ ] Math - CTCI
+* [x] Sort & Searching - CTCI
 
 Tuesday (10/10/2017):
 
-* Hard - CTCI
-* MIT Interview problems
-* Leetcode Top 50
-* Hackerrank 30 Days of coding by McDowell
+* [ ] Hard - CTCI
+* [x] MIT Interview problems
+* [ ] Leetcode Top 50
+* [ ] Hackerrank 30 Days of coding by McDowell
